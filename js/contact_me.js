@@ -9,7 +9,7 @@ $(function() {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
             var vards = $("input#vards").val();
             var uzvards = $("input#uzvards").val();
@@ -26,7 +26,7 @@ $(function() {
             var telefons = $("input#telefons").val();
 
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "../mail/contact_me.php",
                 type: "POST",
                 data: {
                     vards: vards,
