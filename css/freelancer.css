@@ -92,7 +92,9 @@ header .container {
 }
 header img {
     display: block;
-    margin: 0 auto 20px
+    margin: 0 auto 20px;
+    max-width: 225px!important;
+    height: auto;
 }
 header .intro-text .name {
     display: block;
