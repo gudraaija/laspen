@@ -64,12 +64,14 @@
                     <li class="page-scroll">
                         <a href="#pieteikties">Pieteikties</a>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vairāk<span class="caret"></span></a>
-                        <ul class="nav dropdown-menu">
-                            <li><a href="/web/viewer.html?file=vadlinijas.pdf" target="_blank"> Biedrības vadlīnijas </a></li>
-                            <!-- <li><a href="statuti.html"> Statūti </a></li> -->
-                            <li><a href="http://espen.org" target="_blank">ESPEN</a></li>
-                        </ul>
+                    <li class="page-scroll dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class="link">Vairāk <span class="caret"></a>
+                    </li>
+                    <ul class="nav dropdown-menu">
+                        <li><a href="/web/viewer.html?file=vadlinijas.pdf" target="_blank"> Biedrības vadlīnijas </a></li>
+                        <!-- <li><a href="statuti.html"> Statūti </a></li> -->
+                        <li><a href="http://espen.org" target="_blank">ESPEN</a></li>
+                    </ul>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -354,7 +356,12 @@
     <script src="/js/freelancer.min.js"></script>
     <!-- PDF -->
     <script type="/build/pdf.js"></script>
-
+    <script>
+      $(function() {
+        // Enable drop menu clicks
+        $(".link").off();
+      });
+    </script>
 
 </body>
 
